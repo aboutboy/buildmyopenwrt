@@ -240,7 +240,7 @@ jobs:
         run: |
           pwd
           cd openwrt
-          ls -lRth .
+          # ls -lRth .
           rm -rf ./artifact/
           mkdir -p ./artifact/
           find ./bin/targets/ -name "lce-kirkwood-*wifi-uImage" | xargs -i mv -f {} ./artifact/
