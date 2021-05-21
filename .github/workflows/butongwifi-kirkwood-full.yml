@@ -144,6 +144,7 @@ jobs:
           CONFIG_PACKAGE_alsa-ucm-conf=y
           CONFIG_PACKAGE_alsa-utils=y
           CONFIG_PACKAGE_antfs-mount=y
+          CONFIG_PACKAGE_appfilter=y
           CONFIG_PACKAGE_attr=y
           CONFIG_PACKAGE_avahi-dbus-daemon=y
           CONFIG_PACKAGE_badblocks=y
@@ -152,6 +153,7 @@ jobs:
           CONFIG_PACKAGE_cgi-io=y
           CONFIG_PACKAGE_confuse=y
           CONFIG_PACKAGE_dbus=y
+          CONFIG_PACKAGE_default-settings=y
           # CONFIG_PACKAGE_dnsmasq is not set
           CONFIG_PACKAGE_dnsmasq-full=y
           CONFIG_PACKAGE_dnsmasq_full_auth=y
@@ -220,6 +222,7 @@ jobs:
           CONFIG_PACKAGE_kmod-nls-cp936=y
           CONFIG_PACKAGE_kmod-nls-iso8859-1=y
           CONFIG_PACKAGE_kmod-nls-utf8=y
+          CONFIG_PACKAGE_kmod-oaf=y
           CONFIG_PACKAGE_kmod-sched=y
           CONFIG_PACKAGE_kmod-sched-core=y
           CONFIG_PACKAGE_kmod-sound-core=y
@@ -293,13 +296,11 @@ jobs:
           CONFIG_PACKAGE_luci-app-control-webrestriction=y
           CONFIG_PACKAGE_luci-app-control-weburl=y
           CONFIG_PACKAGE_luci-app-cowb-speedlimit=y
-          CONFIG_PACKAGE_luci-app-cowbbonding=y
-          CONFIG_PACKAGE_luci-app-cowbping=y
           CONFIG_PACKAGE_luci-app-firewall=y
           CONFIG_PACKAGE_luci-app-guest-wifi=y
           CONFIG_PACKAGE_luci-app-hd-idle=y
           CONFIG_PACKAGE_luci-app-ksmbd=y
-          CONFIG_PACKAGE_luci-app-music-remote-center=y
+          CONFIG_PACKAGE_luci-app-oaf=y
           CONFIG_PACKAGE_luci-app-opkg=y
           CONFIG_PACKAGE_luci-app-samba4=y
           CONFIG_PACKAGE_luci-app-wifischedule=y
