@@ -239,6 +239,8 @@ jobs:
       - name: Assemble artifact（整理生成的文件）
         run: |
           pwd
+          cd openwrt
+          ls -lRth .
           rm -rf ./artifact/
           mkdir -p ./artifact/
           find ./bin/targets/ -name "lce-kirkwood-*wifi-uImage" | xargs -i mv -f {} ./artifact/
