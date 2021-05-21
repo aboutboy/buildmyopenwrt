@@ -395,5 +395,5 @@ jobs:
       - name: Upload artifact（上传）
         uses: actions/upload-artifact@v2
         with:
-          name: butongwifi-kirkwood-${{ env.github_run_number }}
+          name: butongwifi-kirkwood-${{ github.run_number }}
           path: ./openwrt/artifact/
