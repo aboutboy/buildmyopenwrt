@@ -238,7 +238,7 @@ jobs:
 
       - name: Assemble artifact（整理生成的文件）
         run: |
-          cd openwrt
+          pwd
           rm -rf ./artifact/
           mkdir -p ./artifact/
           find ./bin/targets/ -name "lce-kirkwood-*wifi-uImage" | xargs -i mv -f {} ./artifact/
@@ -249,5 +249,5 @@ jobs:
       - name: Upload artifact（上传）
         uses: actions/upload-artifact@v2
         with:
-          name: butongwifi-kirkwood
+          name: butongwifi-kirkwood-$GITHUB_RUN_NUMBER
           path: ./artifact/
