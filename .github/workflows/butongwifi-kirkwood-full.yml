@@ -61,7 +61,7 @@ jobs:
         run: |
           df -hT $PWD
           git clone $OPENWRT_REPO_URL -b $OPENWRT_REPO_BRANCH openwrt
-          cd openwrt && git reset --hard 142cf2a
+          # cd openwrt && git reset --hard 142cf2a
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
           git clone $MYPACKAGES -b $MYPACKAGES_REPO_BRANCH package/mypackages
 
