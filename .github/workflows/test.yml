@@ -243,11 +243,8 @@ jobs:
           # ls -lRth .
           rm -rf ./artifact/
           mkdir -p ./artifact/
-          find ./bin/targets/ -name "lce-kirkwood-*wifi-uImage" | xargs -i mv -f {} ./artifact/
-          find ./bin/targets/ -name "lce-kirkwood-*wifi-squashfs-factory.bin" | xargs -i mv -f {} ./artifact/
-          ls -lRth ./artifact/ > ./artifact/mytargets.txt
-          ls -lRth ./bin/targets/ >> ./artifact/mytargets.txt
-          ls -lRth ./artifact/
+          
+          ls -lrth . > ./artifact/mytargets.txt
   
       - name: Upload artifact（上传）
         uses: actions/upload-artifact@v2
