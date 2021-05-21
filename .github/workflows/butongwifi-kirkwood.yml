@@ -245,9 +245,10 @@ jobs:
           find ./bin/targets/ -name "lce-kirkwood-*wifi-squashfs-factory.bin" | xargs -i mv -f {} ./artifact/
           ls -lRth ./artifact/ > ./artifact/mytargets.txt
           ls -lRth ./bin/targets/ >> ./artifact/mytargets.txt
+          ls -lRth ./artifact/
   
       - name: Upload artifact（上传）
         uses: actions/upload-artifact@v2
         with:
           name: butongwifi-kirkwood-$GITHUB_RUN_NUMBER
-          path: ./artifact/
+          path: ./openwrt/artifact/
