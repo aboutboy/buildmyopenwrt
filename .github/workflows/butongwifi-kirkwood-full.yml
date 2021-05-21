@@ -63,7 +63,7 @@ jobs:
           git clone $OPENWRT_REPO_URL -b $OPENWRT_REPO_BRANCH openwrt
           # cd openwrt && git reset --hard 142cf2a
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-          git clone $MYPACKAGES -b $MYPACKAGES_REPO_BRANCH package/mypackages
+          git clone $MYPACKAGES -b $MYPACKAGES_REPO_BRANCH openwrt/package/mypackages
 
       - name: Update feeds（更新订阅）
         run: |
