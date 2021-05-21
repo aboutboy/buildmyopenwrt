@@ -145,8 +145,6 @@ jobs:
           CONFIG_PACKAGE_alsa-utils=y
           CONFIG_PACKAGE_antfs-mount=y
           CONFIG_PACKAGE_attr=y
-          CONFIG_PACKAGE_automount=y
-          CONFIG_PACKAGE_autosamba=y
           CONFIG_PACKAGE_avahi-dbus-daemon=y
           CONFIG_PACKAGE_badblocks=y
           CONFIG_PACKAGE_bash=y
