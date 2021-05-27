@@ -378,7 +378,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           body: |
             ${{ steps.tag.outputs.release }}
-          file: ./artifact/firmware/*
+          file: ./openwrt/artifact/firmware/*
           tag: ${{ github.ref }}
           file_glob: true
 
@@ -386,16 +386,16 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: butongwifi-kirkwood-buildinfo-${{ github.run_number }}
-          path: ./artifact/buildinfo/
+          path: ./openwrt/artifact/buildinfo/
 
       - name: Deliver package
         uses: actions/upload-artifact@master
         with:
           name: butongwifi-kirkwood-package-${{ github.run_number }}
-          path: ./artifact/package/
+          path: ./openwrt/artifact/package/
   
       - name: Upload firmware
         uses: actions/upload-artifact@master
         with:
           name: butongwifi-kirkwood-firmware-${{ github.run_number }}
-          path: ./artifact/firmware/
+          path: ./openwrt/artifact/firmware/
