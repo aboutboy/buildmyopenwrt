@@ -65,6 +65,9 @@ jobs:
           # cd openwrt && git reset --hard 142cf2a
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
           git clone $MYPACKAGES -b $MYPACKAGES_REPO_BRANCH openwrt/package/mypackages
+          # Modify Wireless
+          sed -i 's/OpenWrt/BUTONGWIFI/g' openwrt/package/kernel/mac80211/files/lib/wifi/mac80211.sh
+          sed -i 's/set wireless.radio${devidx}.disabled=1/set wireless.radio${devidx}.disabled=0/g' openwrt/package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
       - name: Update feeds（更新订阅）
         run: |
